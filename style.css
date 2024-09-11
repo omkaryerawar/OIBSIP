@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  background: #333333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background-color: #f5c6a5;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  width: 320px;
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 25px;
+  color: #2c2c2c;
+  font-size: 22px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.converter {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center; /* Aligning elements centrally */
+}
+
+label {
+  text-align: left;
+  margin-bottom: 8px;
+  color: #333; /* Darker text for better visibility */
+  font-size: 16px;
+  font-weight: 600;
+  width: 100%;
+}
+
+input,
+select,
+button {
+  padding: 12px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  width: 100%;
+  transition: 0.3s ease;
+  margin-bottom: 10px; /* Consistent margin for all input elements */
+}
+
+input,
+select {
+  background-color: #f2f2f2;
+  color: #2c2c2c;
+  outline: none;
+}
+
+input:focus,
+select:focus {
+  box-shadow: 0 0 5px rgba(0, 0, 255, 0.3);
+}
+
+button {
+  background-color: #8b4513;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #6b3a0a; /* Darker chocolate on hover */
+}
+
+.result input {
+  background-color: #f9f9f9;
+  font-weight: bold;
+  text-align: center;
+  color: #333;
+}
+
+.result input:focus {
+  outline: none;
+}
+
+/* Adjusting hover effect for inputs and dropdown */
+input:hover,
+select:hover {
+  background-color: #e0e0e0;
+}
+
+/* Adding consistent margin, padding, and alignment */
+.converter label {
+  margin-bottom: 5px;
+}
+
+.converter input,
+.converter select {
+  margin-bottom: 10px; /* Add consistent spacing between elements */
+}
+
+.result input {
+  margin-top: 15px; /* Space the result box from other elements */
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+  .container {
+    width: 90vw; /* Use viewport width to adapt to screen size */
+    padding: 1rem; /* Adjust padding for better spacing on smaller screens */
+  }
+
+  h2 {
+    font-size: 1.2rem; /* Slightly smaller font size for headings */
+    margin-bottom: 1rem; /* Adjust bottom margin for better spacing */
+  }
+
+  input,
+  select,
+  button {
+    font-size: 0.9rem; /* Reduce font size for inputs and buttons */
+    padding: 0.75rem; /* Adjust padding for a better fit */
+    margin-bottom: 0.75rem; /* Consistent margin between elements */
+  }
+
+  .result input {
+    font-size: 0.9rem; /* Adjust font size for result input */
+    padding: 0.75rem; /* Adjust padding for result input */
+    margin-top: 1rem; /* Space the result box appropriately */
+  }
+}
